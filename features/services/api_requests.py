@@ -7,7 +7,7 @@ def post_request_service(context, url, payload=None, headers=None):
     context.res = requests.post(url=url, data=payload, headers=headers)
 
 
-def get_request_service(context, url, headers=None, params=None):
+def get_request_service(context, url, headers=None):
     context.res = requests.get(url=url, headers=headers)
 
 
