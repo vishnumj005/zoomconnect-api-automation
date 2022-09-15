@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
-        bat "behave -f allure_behave.formatter:AllureFormatter -o allure-results
+        bat "behave -f allure_behave.formatter:AllureFormatter -o allure-results"
       }
     }
   }
