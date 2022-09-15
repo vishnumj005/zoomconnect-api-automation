@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
-        bat "pip install behave"
         bat "behave --tags=@api_current_balance"
       }
     }
