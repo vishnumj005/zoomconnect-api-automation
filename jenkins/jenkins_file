@@ -7,4 +7,18 @@ pipeline {
       }
     }
   }
+  post('Post Operations'){
+        always{
+            script {
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: '$WORKSPACE/allure-results']]
+
+                ])
+            }
+        }
+  }
 }
