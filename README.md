@@ -27,10 +27,12 @@ Behave bdd test framework and python is used for implementation
 
 4. Run Script through Jenkins
    1. Create new pieline
-   2. Select github project and add URL
-   3. Give jenjins file path in script path
-   4. Save the configuration
-   5. Run the script
+   2. Choose pipeline script from SCM
+   3. Select github project and add URL
+   4. Change branch specifier to */main
+   5. Give jenkins file (jenkins/jenkins_file) in script path 
+   6. Save the configuration
+   7. Run the script
    
 # Folder Structure
 
@@ -51,4 +53,4 @@ Behave bdd test framework and python is used for implementation
 	│         └── authorization_enum.py
 	├── requriements.txt                            # Required libraries
     ├── jenkins                                     #Jenkin related files
-        ├── jenkin_file
+        ├── jenkins_file
