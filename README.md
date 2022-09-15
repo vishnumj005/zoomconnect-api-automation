@@ -7,6 +7,7 @@ Behave bdd test framework and python is used for implementation
 
 * [Github link to clone project](https://github.com/vishnumj005/zoomconnect-api-automation.git)
 * please note: the currently used version for python is 3.10.
+* Install requirements before executing the scripts
 
 
 # How to run test?
@@ -14,12 +15,23 @@ Behave bdd test framework and python is used for implementation
 1. Via Terminal
 
     * Run `behave --tags=@{specific_tag}`
+    * Run `behave --tags={tag1,tag2}`
     * Run `behave <path to feature file>`
 
 2. Via PyCharm
     * Run directly from the feature file
-   
 
+3. Run Script with allure reporting
+   * Run `behave -f allure_behave.formatter:AllureFormatter -o <path to result>`
+   * Then Run `allure serve`
+
+4. Run Script through Jenkins
+   1. Create new pieline
+   2. Select github project and add URL
+   3. Give jenjins file path in script path
+   4. Save the configuration
+   5. Run the script
+   
 # Folder Structure
 
 	.
@@ -37,4 +49,6 @@ Behave bdd test framework and python is used for implementation
     │     ├── service_constants                    # Constants data and auth for API
     │         ├── api_config.py
 	│         └── authorization_enum.py
-	└── requriements.txt                            # Required libraries
+	├── requriements.txt                            # Required libraries
+    ├── jenkins                                     #Jenkin related files
+        ├── jenkin_file
