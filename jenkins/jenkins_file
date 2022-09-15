@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        sh "behave --tags=@api_current_balance"
+        bat "behave --tags=@api_current_balance"
       }
     }
   }
