@@ -1,4 +1,4 @@
-@create_groups
+@api_create_groups
 Feature: To test the get create group API for Zoom Connect
 
     Scenario: Testing the create group API response

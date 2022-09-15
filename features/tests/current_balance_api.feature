@@ -1,4 +1,4 @@
-@current_balance
+@api_current_balance
 Feature: To test the get balance API for Zoom Connect
 
     Scenario: Testing the get balance API response

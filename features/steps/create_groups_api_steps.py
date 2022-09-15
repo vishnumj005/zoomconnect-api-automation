@@ -1,5 +1,3 @@
-import json
-
 from behave import step
 
 from features.services.api_commons import build_api_key_payload, create_headers
