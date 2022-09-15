@@ -3,22 +3,8 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
-        bat "behave -f allure_behave.formatter:AllureFormatter -o allure-results"
+        bat "behave --tags=api_current_balance,api_create_groups"
       }
     }
-  }
-  post('Post Operations'){
-        always{
-            script {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: '$WORKSPACE/allure-results']]
-
-                ])
-            }
-        }
   }
 }
