@@ -4,5 +4,4 @@ pipeline {
         bat "behave --tags=@api_current_balance"
       }
     }
-  }
 }
