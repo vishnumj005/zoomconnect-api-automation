@@ -33,6 +33,7 @@ Behave bdd test framework and python is used for implementation
    5. Give jenkins file (jenkins/jenkins_file) in script path 
    6. Save the configuration
    7. Run the script
+   * note: uncomment line number 7 from jenkins_file to run in Linux/mac machine
    
 # Folder Structure
 
