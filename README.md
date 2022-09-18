@@ -8,8 +8,8 @@ Behave bdd test framework and python is used for implementation
 * [Github link to clone project](https://github.com/vishnumj005/zoomconnect-api-automation.git)
 * please note: the currently used version for python is 3.10.
 * Install requirements before executing the scripts
-* Important note: Create an account in zoomconnect and give auth key and email id in `features/service_constants/authorization_enum.py `
   file before running the script.
+* Important note: Create an account in [zoomconnect](https://www.zoomconnect.com/app/account/signup) and give auth key and email id in `features/service_constants/authorization_enum.py `
 
 # How to run test?
 
